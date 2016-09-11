@@ -5,7 +5,7 @@ The project is a simple online shop very focus for my first product.
 
 There are three things that I value the most:
     - First: The js code has been the most dificult part of the project, still there is a lot to improve
-    - Second: Views where simple and intituive
+    - Second: Views were simple and intituive
     - Third: The structure of the database
 
 I would like to say that I must order some of the code and make tests. I will improve it during the months

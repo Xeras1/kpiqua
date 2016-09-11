@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  color: MyString
+  image: MyString
+  hoop: false
+  neck: false
+
+two:
+  color: MyString
+  image: MyString
+  hoop: false
+  neck: false

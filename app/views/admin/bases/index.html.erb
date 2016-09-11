@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bases</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Color</th>
+      <th>Image</th>
+      <th>Hoop</th>
+      <th>Neck</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bases.each do |basis| %>
+      <tr>
+        <td><%= basis.color %></td>
+        <td><%= basis.image %></td>
+        <td><%= basis.hoop %></td>
+        <td><%= basis.neck %></td>
+        <td><%= link_to 'Show', [:admin, basis] %></td>
+        <td><%= link_to 'Edit', edit_admin_basis_path(basis) %></td>
+        <td><%= link_to 'Destroy', [:admin ,basis], method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Base', new_admin_basis_path %>

@@ -1,0 +1,53 @@
+<div class="cart">
+    <!-- <div class="add-new-sweater">
+        <p><a id="modalButton" class="modal-button new-button"><i class="fa fa-cart-plus" aria-hidden="true"></i> Crea otra kpiqua</a></p>
+    </div>
+    <div id="modal" class="rotator-modal">
+            <div class="modal-content rotator-modal-content">
+                <div class="rotator-view rotator-modal-view">
+                    <ul class="ul-rotator-horizontal">
+                    </ul>
+                    <ul class="ul-rotator-vertical"></ul>
+                </div>
+                 <center><button class="price-button"><p>Añadir</p></button></center>
+            </div>
+        </div> -->
+
+
+    <div class="sweater" data-id="<%= @sweater_ids[0]%>">
+        <div class="sweater-pic">
+            <img class="pic-base" src="/<%= @base_images[0] %>">
+            <img class="pic-pocket" src="/<%=@pocket_images[0]%>">
+        </div>
+        <div class="sweater-info">
+            <h2><p>Base: </p></h2><p class="base"><%= @base_info[0].color %></p>
+            <h2><p>Bolsillo: </p></h2><p class="pocket"><%= @pocket_info[0].color %></p>
+            <h2><p>Capucha: </p></h2>
+                <% if @base_info[0].hood == true %>  
+                   <p class="hood"> Sí</p>
+                <% else %>
+                    <p class=" hood"> No</p>
+                <% end %>
+            <h2><p>Cuello: </p></h2>
+            <% if @base_info[0].hood == true %>  
+               <p class="hood"> Old School</p>
+            <% else %>
+                <p class=" hood"> Normal </p>
+            <% end %>
+            <form action="/update_order" method="post">
+                <label class="size-text"> <h2> <p> Talla: </p></h2></label>
+                    <select name="size" class="size-tag">
+                        <option value= 'M'><p>M</p></option>
+                        <option value= 'L'><p>L</p></option>
+                        <option value= 'XL'><p>XL</p></option>
+                        <option value= '2XL'><p>2XL</p></option>
+                <input type='hidden' name='id' value="<%= @sweater_ids[0]%>">
+                <input type='hidden' name='authenticity_token' value="<%= form_authenticity_token %>">
+                <input class="price-button buy-button" type="submit" name="submit-user" value="Realizar compra">
+    </form>                   
+                 </div>
+            </form>
+        </div>
+    </div>
+    
+</div>

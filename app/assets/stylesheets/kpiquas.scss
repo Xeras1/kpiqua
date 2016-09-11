@@ -1,0 +1,372 @@
+// Place all the styles related to the kpiquas controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+video { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+  	background-size: cover;
+  	transition: 1s opacity;
+    opacity: 0.5;
+}
+
+.video-text{
+    margin:2px;
+    padding-left: 15%;
+    padding-top:15%;
+}
+.video-text p{
+  line-height: 60px;
+  color: rgb(108, 125, 148); 
+  font-family: "Courier", monospace;
+  font-size: 50px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 2s steps(60, end); 
+}
+
+.video-text p:last-of-type{
+  animation: type2 3s steps(60, end);
+}
+
+.span-video {
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: 0;}
+}
+
+.down {
+  display: block;
+  margin-top: 6%;
+}
+
+.fa-angle-double-down {
+  opacity: 0.8;
+}
+
+.bounce {
+  animation: bounceInDown 6s infinite;
+  
+}
+
+@keyframes bounceInDown {
+  0% {
+     opacity: 1;
+     transform: translateY(-10px);
+  }
+  25% {
+     opacity: 1;
+     transform: translateY(10px);
+  }
+  50% {
+     transform: translateY(-10px);
+  }
+  75% {
+     transform: translateY(10px);
+  }
+  100% {
+     transform: translateY(-10px);
+  }
+}
+
+
+.rotator-text {
+  text-align: center; 
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom-style: groove;
+  border-width: 1px;
+  border-color: rgb(108, 125, 148);
+}
+
+.rotator-text p {
+  margin-bottom: 0px;
+}
+
+.rotator-view {
+  margin: 0 auto;
+  height: 300px;
+  display: block;
+  position: relative;
+  width: 1000px;
+  overflow: hidden;
+  margin-bottom: 30px
+}
+
+.ul-rotator-horizontal{
+  position: absolute;
+  padding-left: 0;
+  height: 300px;
+  width: 900%;
+  transform: translateX(-350px);
+}
+
+
+
+.ul-rotator-horizontal img {
+  top:0;
+  left:0;
+  float: left;
+  width: 300px;
+  height: 300px; 
+  display: block;
+  position: static;
+  margin-right: 50px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.ul-rotator-vertical{
+  left: 350px;
+  position: absolute;
+  padding-left: 0;
+  height: 100000px;
+  width: 100px;
+  z-index: 100;
+  }
+
+.ul-rotator-vertical img {
+
+  margin-bottom:0px; 
+  margin-top:0px;
+  height: 300px;
+  width: 300px;
+  transform: translateY(-600px);
+}
+
+
+.modal-button{
+  display: inline-block;
+  margin-left: 60%;
+}
+
+.price-button {
+  text-align: center;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgb(108, 125, 148);
+}
+
+.pictures-text {
+  position: relative;
+  text-align: center; 
+  margin-top: 100px;
+  margin-bottom: 10px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-bottom-style: groove;
+  border-width: 1px;
+  border-color: rgb(108, 125, 148);
+}
+
+.pictures-text p {
+  margin-bottom: 0px;
+}
+
+.pic-text {
+  left:0;
+  top:0;
+}
+
+.pictures img {
+  display: inline-block;  
+  width: 500px;
+  height: auto;
+}
+
+.pictures div{
+  width: 500px;
+  display: inline-block;
+  margin:5%;
+}
+
+.cart {
+  position:relative;
+  margin: 1% 10% 2% 10%;
+  margin-right:2%; 
+  width: 80%;
+  min-height: 595px;
+  
+}
+
+.add-new-sweater {
+  display: table-cell;
+  position: absolute;
+  margin: 2% 2% 2% 9%;
+}
+
+.buy-order {
+  position:absolute;
+  margin-top: 0.75%;
+  margin-left: 75%;
+}  
+
+.sweater {
+  border-width: 1px;
+  border: groove;
+  position: absolute;
+  margin-top: 8%;
+  margin-left: 6%;
+  padding-left: 2%; 
+  width: 900px;
+  height: 440px;
+}
+.pic-base {
+  margin: 20px 200px 20px 0px;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+}
+
+.pic-pocket {
+  margin: 20px 200px 20px 0px;
+  position:absolute;
+  width: 300px;
+  height: 300px;
+} 
+
+.sweater-info {
+  margin-left: 600px;
+}
+
+
+
+
+.new-button {
+  width: 300px;
+  display: inline-grid!important;
+  margin-left: 1%
+}
+
+.sweater-to-sell{
+  display: inline-block;
+  position: relative;
+  margin: 10% 2% 2% 2%;
+  width: 50%;
+  height: 300px;
+  background-color: white;
+}
+
+.picture-to-sell {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+}
+
+.picture-to-sell img{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left:0;
+}
+
+.bill {
+  position: absolute;
+  margin-left: 180px;
+}
+
+.type-product{
+  margin: 20px 20px 30px 20px;
+  font-size: 22px;
+
+}
+
+.info-product {
+   padding-left: 10px;
+   margin-right: 5px;
+   border-bottom-style: groove;
+   border-width:2px;
+   padding-bottom: 5px;
+}
+
+.info-price {
+  margin-top: 10px;
+}
+
+.client-form {
+  display: inline-block;
+  float: right;
+  display: inline-block;
+  position: relative;
+  margin: 10% 2% 2% 2%;
+  width: 42%;
+  height: 300px;
+}
+
+
+.client-inputs {
+  border-width: 0.5px;
+  border-style: none;
+  width: 400px;
+  height: 30px;
+  text-align: center;
+  margin: 30px 30px 10px 30px;
+  background: rgba(108, 125, 148, 0.8);
+  font-family: ‘Courier New’, Courier, monospace;
+  font-size: 20px;
+  line-height: 20px; 
+}
+
+
+.client-inputs-submit {
+  margin-top: 20px
+}
+
+.direction {
+  height: 100px ;
+  position: relative;
+}
+
+.sold-video {
+  position: fixed;
+}
+
+.sold-text {
+  padding-left: 50px;
+}
+
+.sold-text p {
+  font-size: 30px;
+  color: black;
+}
+.back-homepage{
+  margin-top: 40px;
+  padding: 0;
+}
+.back-homepage p{
+  font-style: cursive;
+  color: rgb(108, 125, 148)!important;
+  position:absolute;
+}
+
+

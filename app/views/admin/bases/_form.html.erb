@@ -1,0 +1,33 @@
+<%= form_for([:admin, @basis]) do |f| %>
+  <% if @basis.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@basis.errors.count, "error") %> prohibited this basis from being saved:</h2>
+
+      <ul>
+      <% @basis.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :color %><br>
+    <%= f.text_field :color %>
+  </div>
+  <div class="field">
+    <%= f.label :image %><br>
+    <%= f.text_field :image %>
+  </div>
+  <div class="field">
+    <%= f.label :hoop %><br>
+    <%= f.check_box :hoop %>
+  </div>
+  <div class="field">
+    <%= f.label :neck %><br>
+    <%= f.check_box :neck %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

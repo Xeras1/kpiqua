@@ -1,0 +1,18 @@
+
+<video class="sold-video" autoplay  poster="<%= asset_url 'frontal_kpq_poster.png' %>" id="bgvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="<%= asset_url 'frontal_kpq_baja.webm' %>" type="video/webm">
+<source src="<%= asset_url 'frontal_kpq_baja.mp4' %>" type="video/mp4">
+</video>
+
+
+<div class=cart>
+<div class="video-text sold-text">
+<p> ¡Muchas gracias por su pedido <%= @user.name%>! </p>
+<p> En breves nos pondremos en contacto con usted.</p>
+<p> Si tiene cualquier duda, escríbanos a info@kpiqua.com</p>
+<p>It is time to be kpiqua<span class="span-video">|</span></p>
+</div>
+<div class="video-text back-homepage"></div>
+<p class="back-homepage-text"> Volver a la página de inicio</p>
+</div>

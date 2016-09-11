@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @basis.color %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @basis.image %>
+</p>
+
+<p>
+  <strong>Hoop:</strong>
+  <%= @basis.hoop %>
+</p>
+
+<p>
+  <strong>Neck:</strong>
+  <%= @basis.neck %>
+</p>
+
+<%= link_to 'Edit', edit_admin_basis_path(@basis) %> |
+<%= link_to 'Back', admin_bases_path %>

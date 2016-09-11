@@ -1,0 +1,3 @@
+class SweatersController < ApplicationController
+
+end

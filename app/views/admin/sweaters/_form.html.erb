@@ -1,0 +1,33 @@
+<%= form_for(:admin, @sweater) do |f| %>
+  <% if @sweater.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sweater.errors.count, "error") %> prohibited this sweater from being saved:</h2>
+
+      <ul>
+      <% @sweater.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :base_id %><br>
+    <%= f.number_field :base_id %>
+  </div>
+  <div class="field">
+    <%= f.label :pocket_id %><br>
+    <%= f.number_field :pocket_id %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br>
+    <%= f.number_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :cost %><br>
+    <%= f.number_field :cost %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

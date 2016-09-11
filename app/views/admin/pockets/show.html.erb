@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @pocket.color %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @pocket.image %>
+</p>
+
+<%= link_to 'Edit', edit_admin_pocket_path(@pocket) %> |
+<%= link_to 'Back', admin_pockets_path %>

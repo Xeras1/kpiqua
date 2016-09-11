@@ -1,0 +1,76 @@
+<video autoplay  poster="<%= asset_url 'frontal_kpq_poster.png' %>" id="bgvid" loop>
+  <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="<%= asset_url 'frontal_kpq_baja.webm' %>" type="video/webm">
+<source src="<%= asset_url 'frontal_kpq_baja.mp4' %>" type="video/mp4">
+</video>
+
+
+
+<div class="video-text">
+<p> It is time to be yourself</p>
+<p>Kpiqua was there</p>
+<p>Kpiqua is here </p>
+<p>It is time to be kpiqua<span class="span-video">|</span></p>
+</div>
+
+<div class="down bounce">
+   <center><i class="fa fa-angle-double-down fa-5x"></i></center>
+</div>
+
+<div class="rotator-text" id="rotator">
+    <p>Crea tu propia kpiqua</p>
+</div>
+
+<div class="rotator">
+    <div class="rotator-view">
+        <ul class="ul-rotator-horizontal">
+        </ul>
+        <ul class="ul-rotator-vertical"></ul>
+    </div>
+
+    <a id="modalButton" class="modal-button"><i class="fa fa-info fa-lg" aria-hidden="true"></i></a>
+    <div id="modal" class="modal">
+         <div class="modal-content">
+            <span class="close">x</span>
+            <h2><p>Base: </p></h2><p class="base"></p>
+            <h2><p>Bolsillo: </p></h2><p class="pocket"></p>
+            <h2><p>Capucha: </p></h2><p class="hood"></p>
+            <h2><p>Cuello: </p></h2><p class="neck"></p>
+        </div>
+    </div>
+    <center><button class="price-button order-button" type="submit"> <p> Comprar 39 €</p></button></center>
+    
+
+</div>
+
+    <div class="pictures-text">
+        <p id="look_book">Look Book</p>
+    </div>
+
+
+<div class="pictures">
+
+    <div class="knee-before">
+        <%= image_tag("knee_before.jpg")%>
+    </div>
+    <div class="pic-text">
+        <p>Once kpiqua,  </p>
+        <p>Always kpiqua.</p>
+        <p></p>
+        <p>Live Alive</p>
+    </div>
+    <div class="sea">
+        <%= image_tag("sea_shore.jpg")%>
+    </div>
+    <div class="smily-gg">
+        <%= image_tag("smily_g")%>
+    </div>
+    <div class="smily-w">
+        <%= image_tag("smily_w")%>
+    </div>
+
+      <div class="sabana">
+        <%= image_tag("sabana.jpg")%>
+    </div>
+</div>
+

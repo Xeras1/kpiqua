@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Base:</strong>
+  <%= @sweater.base_id %>
+</p>
+
+<p>
+  <strong>Pocket:</strong>
+  <%= @sweater.pocket_id %>
+</p>
+
+<p>
+  <strong>Price:</strong>
+  <%= @sweater.price %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @sweater.cost %>
+</p>
+
+<%= link_to 'Edit', edit_admin_sweater_path(@sweater) %> |
+<%= link_to 'Back', admi_sweaters_path %>

@@ -54,6 +54,29 @@ a:hover {
     width: 80%; /* Could be more or less, depending on screen size */
 }
 
+.modal-instructions {
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 20%;
+    top: 950px;
+    margin: 0 25%
+    width: 50%; /* Full width */
+    height: 50%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: blue; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content-instructions {
+    width: 50%;
+    opacity: 0.92;
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
 /* The Close Button */
 .close {
     color: #aaa;
@@ -76,7 +99,9 @@ p {
 	line-height: 20px;
 	margin: 0 0 10px;
 }
-
+p .instructions {
+  font-size: 300px;
+}
 /*.top-bar.hide-menu{
 	top:-50px;
 
@@ -111,13 +136,13 @@ p {
 	border-bottom-style: groove;
 	border-bottom-color: rgb(108, 125, 148);
 }
-.top-bar .front-logo {
-	padding-left: 5%;
-	float: left;
-	text-align: center;
-	height: 100%;
-	display: inline-block;;
-}
+.top-bar .front-logo-centered {
+  padding-left: 50%;
+  float: left;
+  text-align: center;
+  height: 100%;
+  display: inline-block;;
+} 
 
  .top-bar .slogan {
  	font-family: ‘Lucida Console’, Monaco, monospace;

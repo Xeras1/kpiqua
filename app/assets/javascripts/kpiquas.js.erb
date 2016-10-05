@@ -211,20 +211,29 @@ function errorMessage(){
 }
 
 function links(){
+  $('.front-logo-centered').on('click', function(){
+    window.location.replace("http://localhost:3000/");
+  })
   $('.front-logo').on('click', function(){
     window.location.replace("http://localhost:3000/");
   })
   $('.first-bton').on('click', function(){
-    window.location.replace("http://localhost:3000/#rotator");
+    $('html, body').animate({
+        scrollTop: $("#rotator").offset().top
+    }, 1000);
   })
   $('.second-bton').on('click', function(){
-    window.location.replace("http://localhost:3000/#look_book");
+        $('html, body').animate({
+        scrollTop: $("#look_book").offset().top
+    }, 1000);
   })
   $('.back-homepage-text').on('click', function(){
     window.location.replace("http://localhost:3000/");
   })
   $('.fa-angle-double-down').on('click', function(){
-    window.location.replace("http://localhost:3000/#rotator");
+    $('html, body').animate({
+        scrollTop: $("#rotator").offset().top
+    }, 1000);
   })
 
 }

@@ -33,7 +33,7 @@
       <form action="/sold_to_user" method="post">
         <center><input class="client-inputs" type="text" name="name" placeholder="Nombre"></center>
         <center><input class="client-inputs" type="email" name="email" placeholder="E-mail"></center> 
-        <center><input class="client-inputs direction" type="text-area" name="direction" placeholder="Dirección"></center> 
+        <center><textarea name="direction" class="client-inputs direction" placeholder="Dirección"></textarea>
         <input name="sweater_id" value="<%= @sweaters[0].id %>" type="hidden">
         <center><input class="price-button client-inputs-submit" type="submit" name="submit-size" value="Realizar compra"></center>
         <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">

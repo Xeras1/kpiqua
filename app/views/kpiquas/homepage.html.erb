@@ -9,14 +9,14 @@
 
 <video autoplay  poster="<%= asset_url 'frontal_kpq_poster.png' %>" id="bgvid" loop>
   <!-- WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
-<source src="<%= asset_url 'frontal_kpq_baja.webm' %>" type="video/webm">
-<source src="<%= asset_url 'frontal_kpq_baja.mp4' %>" type="video/mp4">
+<source src="<%= asset_url 'frontal_kpq_baja.webm' %>" type="video/webm" loop>
+<source src="<%= asset_url 'frontal_kpq_baja.mp4' %>" type="video/mp4" loop>
 </video>
 
 
 
 <div class="video-text">
-<p> It is time to be yourself</p>
+<p>It is time to be yourself</p>
 <p>Kpiqua was there</p>
 <p>Kpiqua is here </p>
 <p>It is time to be kpiqua<span class="span-video">|</span></p>
@@ -32,7 +32,13 @@
 <div id="modal-intructions" class="modal-instructions">
      <div class="modal-intructions-content">
 
-        <h2><p class="instructions">Utiliza las flechas del teclado para personalizar tu sudadera</p></h2>
+    <h2>
+        <i class="fa fa-arrow-left" aria-hidden="true" color="white"></i>
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+        <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        <i class="fa fa-arrow-right" aria-hidden="true"></i>
+        <p class="instructions">¡Utiliza las flechas del teclado para personalizar tu sudadera!</p>
+    </h2>
     </div>
 </div>
 <div class="rotator">
@@ -42,7 +48,7 @@
         <ul class="ul-rotator-vertical"></ul>
     </div>
 
-    <a id="modalButton" class="modal-button"><i class="fa fa-info fa-lg" aria-hidden="true"></i></a>
+    <a id="modalButton" class="modal-button"><i class="fa fa-info-circle fa-lg" aria-hidden="true"></i></a>
     <center><button class="price-button order-button" type="submit"> <p> Comprar 39 €</p></button></center>
 </div>
 <div id="modal" class="modal">

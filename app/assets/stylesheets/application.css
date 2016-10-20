@@ -62,7 +62,7 @@ a:hover {
     left: 25%;
     top: 900px;
     width: 50%; /* Full width */
-    height: 30%; /* Full height */  
+    height: 37%; /* Full height */  
     background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
 }
 
@@ -82,6 +82,18 @@ a:hover {
   line-height: 50px;
  }
 
+.fa-arrow-left{
+  color: white;
+}
+.fa-arrow-down{
+  color: white; 
+}
+.fa-arrow-right{
+  color: white;
+}
+.fa-arrow-up{
+  color: white;
+}
 
 /* The Close Button */
 .close {

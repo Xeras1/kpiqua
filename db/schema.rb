@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20160725124614) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "bases", force: :cascade do |t|
     t.string   "color"
     t.string   "image"
